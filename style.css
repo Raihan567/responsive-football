@@ -1,0 +1,145 @@
+/* google-font link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =================
+    Common styles 
+===================*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.container {
+    background-color: #2D25A0;
+}
+
+/*=================
+    header section styles  
+ ==================*/
+.flexible-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.half-width {
+    width: 100%;
+    padding: 8%;
+}
+
+.half-width img {
+    width: 556.01px;
+    height: 438px;
+}
+
+.link-btn {
+    background-color: #E02C6D;
+    font-size: ;
+    width: 168px;
+    height: 25px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.link-btn:hover {
+    /* background: transparent; */
+    color: #000;
+    background-color: #fff;
+    /* border: 1px solid #a02577; */
+    transition: all 0.7s ease-in-out;
+}
+
+/*=================
+     Player section styles 
+================== */
+.top-player {
+    /* width: 990px; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ddd; */
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+.player {
+    /* display: flex; */
+    width: 330px;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px .1px rgb(192, 171, 171);
+    border-radius: 2%;
+}
+
+.player img {
+    width: 300px;
+    height: 256px;
+    border-radius: 5%;
+    margin-top: 13px;
+}
+
+.player-info {
+    font-size: 16px;
+    color: #6C6C6C;
+    font-weight: normal;
+    padding: 10px;
+
+}
+
+
+/* Footer area  */
+
+.football-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.logo img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.football {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    grid-column-gap: 12px;
+}
+.social{
+    padding: 0 15px;
+}
+.fab{
+    padding: 10px 15px;
+    background-color: #6c6c6c41;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #6C6C6C;
+}
