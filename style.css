@@ -1,16 +1,15 @@
 /* google-font link  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
+/* =================
+    Common styles 
+===================*/
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
-/* =================
-    Common styles 
-===================*/
 main {
     display: flex;
     flex-direction: column;
@@ -19,21 +18,20 @@ main {
     margin-bottom: 30px;
 }
 
-.container {
-    background-color: #2D25A0;
-}
-
 /*=================
     header section styles  
  ==================*/
-.flexible-container {
+ .container {
+    background-color: #2D25A0;
+}
+ .flexible-container {
     display: flex;
     flex-direction: row;
 
 }
 
 .section-title {
-    font-size: 63px;
+    font-size: 3.93em;
     font-weight: 700;
     color: #fff;
 }
@@ -112,7 +110,9 @@ main {
 }
 
 
-/* Footer area  */
+/* ===============
+        Footer area  
+================*/
 
 .football-area {
     display: flex;
@@ -131,15 +131,28 @@ main {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    grid-column-gap: 12px;
+    grid-column-gap: 0.75em;
 }
 .social{
-    padding: 0 15px;
+    padding: 0 1em;
 }
 .fab{
     padding: 10px 15px;
+    margin-left: 10px;
     background-color: #6c6c6c41;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #6C6C6C;
+}
+
+/* For Mobile device */
+
+@media only screen and(min-width:48em) {
+    .container{
+        width: 100%;
+    }
+    .football, .container{
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
 }
