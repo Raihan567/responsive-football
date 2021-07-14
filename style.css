@@ -9,6 +9,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 main {
@@ -185,6 +186,9 @@ hr {
         justify-content: center;
         align-items: center;
     }
+    .sponsor-title{
+        font-size: 2.7em; 
+    }
     .sponsor{
     display: flex;
     flex-direction: column;
@@ -238,13 +242,13 @@ hr {
 
 /* For Mobile device */
 
-@media only screen and(min-width:48em) {
-    .container {
+@media only screen and (max-width:48em) {
+    .container , .players, .top-blog, .sponsor-in, .football-area, .{
         width: 100%;
     }
 
-    .football,
-    .container {
+    .blogs, .players,
+    .container, .sponsor-in, .flexible-container, .football-area, .half-width {
         grid-template-columns: repeat(1, 1fr);
         flex-direction: column;
     }
